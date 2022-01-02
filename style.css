@@ -42,7 +42,9 @@ a{
     
  }
 
-  .cars__section--btn a{
+  .cars__section--btn a,
+  .cars__section--btn :visited a
+  {
     color: var(--background-color);
     width: 1rem;
     padding: 0.7rem 1.5rem;
@@ -152,13 +154,6 @@ a{
     margin-top:0rem;
 }
 
-
-
-/* .cars__section--slide--img img:nth-of-type(2){
-    margin-bottom:-4rem;
-     width: 100%;
-     object-fit: cover;
-} */
 .cars__section--slide--dets{
     background-color: var(--background-color);
     width:100%;
@@ -172,4 +167,56 @@ a{
     justify-content: center;
     color: var(--black-color);
     
+}
+@media ( max-width:768px){
+    .cars__section--heading{
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        text-transform: capitalize;
+    }
+    .cars__section--container{
+        width: 85%;
+    }
+   .cars__section--paragraph{
+       width: 90%;
+       font-size: 0.8rem;
+   }
+
+   .cars__section--btn {
+    margin: 1.5rem 0;
+   
+}
+.cars__section--mainslide{
+    display: flex;
+    width: 97%;
+    overflow-x: auto;
+    height:15rem ;
+    margin: auto;
+
+}
+.cars__section--slideArea--heading{
+margin-bottom: 1.5rem;
+text-transform: capitalize;
+text-align: center;
+}
+.cars__section--slide--box{
+    position: relative;
+    height: 14rem;
+    max-width:50%;
+    box-shadow:  0.1rem 0.1rem 0.5rem  var(--box-shadow);
+    border-radius: 1rem ;
+    overflow: hidden;
+    margin-left:1.5rem;
+    transition: all 0.4s ease-in;
+  
+ } 
+ .cars__section--slideArea span{
+    font-size: 3rem;
+    position: absolute;
+    left:-9%;
+    top: 40%;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
 }
